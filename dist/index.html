@@ -1,0 +1,241 @@
+<!-- References
+- https://stackoverflow.com/questions/20818881/use-video-as-background-for-div
+- https://www.w3schools.com/howto/howto_js_sticky_header.asp
+- https://stackoverflow.com/questions/3569329/javascript-to-make-the-page-jump-to-a-specific-location
+- https://www.w3schools.com/howto/howto_js_slideshow.asp
+- https://www.w3schools.com/howto/howto_css_modals.asp
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jihoon Kang's Personal Webside</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/37c2285728.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="e996ac13c4c39331e964.js" defer></script>
+</head>
+
+<body>
+    <div class="container" , id="home">
+        <video autoplay muted loop>
+            <source src="eaccbe430a7516603369.mp4" type="video/mp4"/>
+        </video>
+        <div class="caption">
+            <h1>Hello, my name is Jihoon Kang</h1>
+            <p>Software Developer, Data Scientist</p>
+        </div>
+        <div class="navbar" id="sticky-navbar">
+            <div class="navbar-element" id="click-home">Home</div>
+            <div class="navbar-element" id="click-academics">Academics</div>
+            <div class="navbar-element" id="click-experiences">Experiences</div>
+            <div class="navbar-element" id="click-projects">Projects</div>
+            <div class="navbar-element" id="click-interests">Interests</div>
+            <div class="navbar-element" id="click-contacts">Contacts</div>
+        </div>
+    </div>
+
+    <div class="section academics" id="academics">
+        <h2>Academics</h2>
+        <div class="academics-container">
+            <i class="fas academic fa-graduation-cap"></i>
+            <div class="text-large">
+                As the Class of 2022 at the University of Illinois at Urbana-Champaign,
+                <br> I studied computer science and economics, minoring statistics.
+                <br> Some of the major courses that I have taken include:
+                <br> - Statistical Reinforcement Learning
+                <br> - Applied Machine Learning
+                <br> - Software Engineering I
+                <br> - Algorithms & Models of Computation
+            </div>
+        </div>
+    </div>
+    <div class="section" id="experiences">
+        <h2>Experiences</h2>
+        <div class="experiences-container">
+            <div class="experience-left">
+                <img src="f8fda84dae3bb79d52dc.png" class="experience-logo"></img>
+                <h3 class="align-center">Samsung Electronics</h3>
+                <h4 class="align-center">June 2021 ~ August 2021</h4>
+                <div class="text-content experience">
+                    As a software developer intern at Samsung Electronics, I developed and simulated robot simulation environment for reinforcement learning, implementing
+                    <a href="http://www.mujoco.org/" class="link">MuJoCo</a> engine and
+                    <a href="https://gym.openai.com/" class="link">OpenAI Gym</a>. With the developed custom environment, a 6-DoF robot agent was trained implemeting Proximal Policy Optimization algorithm and explored the feasibility of reinforcement
+                    learning adaptation in factory manufacturing environment.
+
+                </div>
+
+            </div>
+            <div class="experience-center">
+                <img src="743742b92212da491154.png" class="experience-logo"></img>
+                <h3 class="align-center">University of Illinois College of Engineering</h3>
+                <h4 class="align-center">August 2020 ~ May 2021</h4>
+                <div class="text-content experience">
+                    For two consecutive semesters, I have worked as a course assistant for
+                    <a href="https://courses.engr.illinois.edu/cs225/fa2021/" class="link">CS 225: Data Structures</a> at the University of Illinois at Urbana-Champaign. As a course assistant, I have enhanced better understanding of data structures for
+                    students using C++ during daily office hours and weekly discussing sessions. Some of the data structures covered in the class include stack & queue, heap, hash table, various tree structures, such as AVL tree, B-tree and K-d tree,
+                    and more.
+                </div>
+            </div>
+            <div class="experience-right">
+                <img src="fc054d858cbe71f7f09f.png" class="experience-logo"></img>
+                <h3 class="align-center">Sibel Health</h3>
+                <h4 class="align-center">May 2020 ~ May 2021</h4>
+                <div class="text-content experience">
+                    As a data analyst intern at
+                    <a href="https://www.sibelhealth.com/" class="link">Sibel Health</a>, I conducted and assisted digital signal processing and data analysis based on the vital signals collecte from the integrated sensors system. I participated in multiple
+                    projects, such as creating a Convolutional Neural Network model for digit recognition to decrease gold data extraction time, and developing a web-based interactive dashboard implementing Flask, providing interdepartmental assistance
+                    by visualization of patients' vital signals and sensors' metadata.
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="section" id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <a href="https://github.com/jihoonkang0829/tradebot">
+                        <img src="0d56698ad8b8b2d04ece.png" style="width:100%">
+                    </a>
+                    <div class="text">
+                        Tradebot
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <a href="https://github.com/jihoonkang0829/Discrimination_Prediction">
+                        <img src="8cf016782b8b3d2c58c8.PNG" style="width:100%">
+                    </a>
+                    <div class="text">
+                        HackIllinois 2021
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <a href="https://devpost.com/software/data-mining-toolkit-for-vr-experiences">
+                        <img src="88afc61da860ed2403f3.jpg" style="width:100%">
+                    </a>
+                    <div class="text">
+                        HackIllinois 2020
+                    </div>
+                </div>
+                <div class="transition" id="transitionButtons">
+                    <div class="prev" id="prev">&#10094;</div>
+                    <div class="next" id="next">&#10095;</div>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="interests">
+        <h2>Interests</h2>
+        <div class="interests-container">
+            <div class="interest-left" id="left-col">
+                <i class="fas fa-project-diagram"></i>
+                <h3 class="align-center">Machine Learning</h3>
+                <div class="text-content">
+                    I am passionate and interested in machine learning, and possess various multiple academic, project, and industry experience in machine learning. I have taken basic machine learning courses, including applied machine learning, and machine learning in economics.
+                    To further challenge myself, I am currently taking a graduate level course, titled <a href="https://nanjiang.cs.illinois.edu/cs542/" class="link">statistical reinforcement learning</a>. I have participated in multiple
+                    hackathons and datathons, deriving critical and creative application of machine learning to real life problems. The projects include
+                    <a id="modalOne" class="link">identifying the native language by English accent</a> and
+                    <a id="modalTwo" class="link">predicting occurences of hate crimes based on deep learning</a>.
+                    <div id="modalContentOne" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="close-one">&times;</span>
+                            <p>Minor language speakers are often underrepresented in the era of technology, where the voice assistant services enrich our lives.
+                                <br>In this project, our team constructed a deep learning model to identify the native language of the speakers based on their English accent, so their voice can be better heard.
+                                <br>
+                                <br> To take a glance of this project, please watch this summary video:
+                                <a href="https://youtu.be/s_NgP9BFSSg" class="link">YouTube</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="modalContentTwo" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="close-two">&times;</span>
+                            <p> With the emergence of the novel coronavirus, our society has witnessed soar in racial discrimination and hate crime since last year. We propose a model to predict occurences of hate crimes to contribute to the efficient prevention
+                                of the hate crimes.
+                                <br>We first collect racial discrimination-related event instances with New York Times API, especially the date, location and the respective occurences of the crimes.
+                                <br>Based on the data collected, we train a deep learning model to predict occurences and locations of future possible discrimanation-related events.
+                                <br>We create a recurrent model that predicts the following week's hate crime occurences in state level, based on the previous 4 weeks' occurences by states.
+                                <br>
+                                <br> To take a glance of this project, please watch this summary video:
+                                <a href="https://youtu.be/vVCEHkP2WUQ" class="link">YouTube</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="interest-right" id="right-col">
+                <i class="fas fa-laptop-code"></i>
+                <h3 class="align-center">Coding</h3>
+                <div class="text-content">
+                    As a computer science major, coding in general is my interest. Apart from academic works, I spend time on personal and team projects, such as the ones described in the Projects section, and participate in competitive coding challenges as well. I am always
+                    intersted in sharing my knowledge in coding and programming as well, and have spent years as a team leader and a president of
+                    <a href="https://illinois.campuslabs.com/engage/organization/codable" class="link">Codable</a> , a registered student organization at the University of Illinois.
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="contacts">
+        <h2>Contacts</h2>
+        <div class="contacts-container">
+            <h3>
+                If you are interested in connecting with or learning more about me, please contact me via:
+            </h3>
+            <div class="sns-links">
+                <div class="sns">
+                    <a href="https://github.com/jihoonkang0829">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="sns">
+                    <a href="https://github.com/jihoonkang0829">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="sns">
+                    <a href="https://www.facebook.com/jihoon.kang.5686/">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="sns">
+                    <a href="mailto:jihoonk2@illinois.edu">
+                        <i class="fa fa-google" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-content footer">
+            This webpage was created as part of a project for
+            <a href="https://uiuc-web-programming.gitlab.io/fa21/" class="link">
+            CS 498: The Art of Web Programming
+            </a> at the University of Illinois at Urbana-Champaign,
+            <br>implementing HTML, CSS and vanilla JavaScript, without any usage of additional frameworks.
+        </div>
+    </div>
+<script defer src="bundle.js"></script></body>
+
+</html>
